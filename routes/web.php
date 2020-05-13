@@ -22,3 +22,11 @@ Route::get('/contact', function () {
 });
 
 Route::get('/posts/{post}', 'PostsController@show');
+
+
+
+Route::get('/student', 'StudentsController@index');
+Route::post('/student','StudentsController@store');
+Route::get('/student/create', 'StudentsController@create');
+Route::get('/student/{student}/edit', 'StudentsController@edit');
+Route::put('/student/{student}', 'StudentsController@update');
